@@ -1,31 +1,9 @@
-import pyttsx3
+from voz import hablar
 import time
 from colorama import Fore, Style, init
-print("ECO VOICE iniciado")
+
 
 init()
-
-# Inicializar el motor de voz
-engine = pyttsx3.init()
-
-
-
-def hablar(texto):
-    print(texto)
-
-    voz = pyttsx3.init()
-
-    voz.setProperty("rate", 160)
-    voz.setProperty("volume", 1.0)
-
-    voices = voz.getProperty("voices")
-    voz.setProperty("voice", voices[15].id)
-
-    voz.say(texto)
-    voz.runAndWait()
-
-    voz.stop()
-
 
 def linea():
     print(Fore.GREEN + "=" * 60 + Style.RESET_ALL)
