@@ -6,7 +6,7 @@ def hablar(texto):
 
     voz = pyttsx3.init()
 
-    voz.setProperty("rate", 160)
+    voz.setProperty("rate", 220)
     voz.setProperty("volume", 1.0)
 
     voices = voz.getProperty("voices")
